@@ -16,30 +16,27 @@
 export class Html5QrcodeStrings {
 
     public static codeParseError(exception: any): string {
-        return `QR code parse error, error = ${exception}`;
+        return `Erro ao ler código, erro = ${exception}`;
     }
 
     public static errorGettingUserMedia(error: any): string {
-        return `Error getting userMedia, error = ${error}`;
+        return `Erro ao pegar userMedia, erro = ${error}`;
     }
 
     public static onlyDeviceSupportedError(): string {
-        return "The device doesn't support navigator.mediaDevices , only "
-        + "supported cameraIdOrConfig in this case is deviceId parameter "
-        + "(string).";
+        return "O dispositivo não tem suporte para navigator.mediaDevices";
     }
 
     public static cameraStreamingNotSupported(): string {
-        return "Camera streaming not supported by the browser.";
+        return "O dispositivo não tem suporte para ler a camera.";
     }
 
     public static unableToQuerySupportedDevices(): string {
-        return "Unable to query supported devices, unknown error.";
+        return "Erro desconhecido.";
     }
 
     public static insecureContextCameraQueryError(): string {
-        return "Camera access is only supported in secure context like https "
-        + "or localhost.";
+        return "Só é possível acessar a cámera em localhost ou HTTPS";
     }
 }
 
@@ -51,55 +48,55 @@ export class Html5QrcodeStrings {
 export class Html5QrcodeScannerStrings {
 
     public static scanningStatus(): string {
-        return "Scanning";
+        return "Escaneando";
     }
 
     public static idleStatus(): string {
-        return "Idle";
+        return "Parado";
     }
 
     public static errorStatus(): string {
-        return "Error";
+        return "Erro";
     }
 
     public static permissionStatus(): string {
-        return "Permission";
+        return "Permissão";
     }
 
     public static noCameraFoundErrorStatus(): string {
-        return "No Cameras";
+        return "Sem Cameras";
     }
 
     public static lastMatch(decodedText: string): string {
-        return `Last Match: ${decodedText}`;
+        return `Último scan: ${decodedText}`;
     }
 
     public static codeScannerTitle(): string {
-        return "Code Scanner";
+        return "Leitor de Códigos";
     }
 
     public static cameraPermissionTitle(): string {
-        return "Request Camera Permissions";
+        return "Abrir a Câmera";
     }
 
     public static cameraPermissionRequesting(): string {
-        return "Requesting camera permissions...";
+        return "Solicitando permissões...";
     }
 
     public static noCameraFound(): string {
-        return "No camera found";
+        return "Nenhuma camera achada";
     }
 
     public static scanButtonStopScanningText(): string {
-        return "Stop Scanning";
+        return "Parar Scan";
     }
 
     public static scanButtonStartScanningText(): string {
-        return "Start Scanning";
+        return "Iniciar Scan";
     }
 
     public static scanButtonScanningStarting(): string {
-        return "Launching Camera...";
+        return "Abrindo camera...";
     }
 
     /**
@@ -108,7 +105,7 @@ export class Html5QrcodeScannerStrings {
      * This will be used to switch to file based scanning.
      */
     public static textIfCameraScanSelected(): string {
-        return "Scan an Image File";
+        return "Escanear um Arquivo";
     }
 
     /**
@@ -117,11 +114,11 @@ export class Html5QrcodeScannerStrings {
      * This will be used to switch to camera based scanning.
      */
     public static textIfFileScanSelected(): string {
-        return "Scan using camera directly";
+        return "Escanear com a camera";
     }
 
     public static selectCamera(): string {
-        return "Select Camera";
+        return "Escolher Camera";
     }
 }
 
@@ -129,10 +126,10 @@ export class Html5QrcodeScannerStrings {
 export class LibraryInfoStrings {
 
     public static builtUsing(): string {
-        return "Built using ";
+        return "Construído com ";
     }
 
     public static reportIssues(): string {
-        return "Report issues";
+        return "Reportar erro";
     }
 }
